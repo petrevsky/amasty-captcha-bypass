@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Magenable_CaptchaBypass">
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Magenable_CaptchaBypass" setup_version="1.1.0">
         <sequence>
-            <module name="Magenable_Base"/>
-            <module name="Magento_ReCaptchaUi"/>
+            <module name="Amasty_InvisibleCaptcha" />
         </sequence>
     </module>
 </config>

@@ -1,23 +1,27 @@
 {
-    "name": "magenable/module-captcha-bypass",
-    "description": "A Magento 2 captcha bypass module for testing purposes",
+    "name": "petrevsky/amasty-captcha-bypass",
+    "description": "A Magento 2 captcha bypass module for testing purposes - Compatible with Amasty InvisibleCaptcha",
     "require": {
         "magento/framework": ">=102.0",
-        "magenable/module-base": "*"
+        "amasty/module-invisible-captcha": "*"
     },
     "type": "magento2-module",
-    "version": "1.0.8",
+    "version": "1.1.0",
     "license": "MIT",
     "authors": [
         {
-            "name": "Magenable",
-            "homepage": "https://magenable.com.au"
+            "name": "Petrevsky",
+            "email": "petrevsky@users.noreply.github.com"
         }
     ],
     "keywords": [
-        "magento 2 captcha bypass",
-        "captcha workaround",
-        "recaptcha bypass"
+        "magento 2",
+        "magento2",
+        "captcha bypass",
+        "recaptcha bypass",
+        "amasty invisible captcha",
+        "amasty captcha bypass",
+        "testing"
     ],
     "autoload": {
         "files": [
@@ -26,5 +30,6 @@
         "psr-4": {
             "Magenable\\CaptchaBypass\\": ""
         }
-    }
+    },
+    "minimum-stability": "stable"
 }

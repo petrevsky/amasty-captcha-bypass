@@ -1,24 +1,36 @@
-1.0.8 (2025-07-04)
-=============
-- Tested with Magento v2.4.8-p1
+# Changelog
 
-1.0.7 (2025-03-10)
-=============
-- Tested with Magento v2.4.8
+All notable changes to this project will be documented in this file.
 
-1.0.6 (2024-12-19)
-=============
-- Tested on Magento v2.4.4-p11, v2.4.5-p10, v2.4.6-p8 and v2.4.7-p3
+## [1.1.0] - 2024-10-03
 
-1.0.5 (2024-08-23)
-=============
-- Tested with Magento v2.4.6-p7 and v2.4.7-p2
+### Added
 
-1.0.4 (2024-04-10)
-=============
-- Tested with Magento 2.4.7 and PHP 8.3
+-   Amasty InvisibleCaptcha compatibility
+-   Plugin for `Amasty\InvisibleCaptcha\Model\Captcha::isNeedToShowCaptcha()`
+-   Comprehensive integration guide (AMASTY_INTEGRATION.md)
+-   Changes summary documentation
+-   .gitignore file
 
-1.0.3 (2024-03-11)
-=============
-- Tested with Magento 2.4.6-p4
-- Added change-log.txt
+### Changed
+
+-   Package name from `magenable/module-captcha-bypass` to `petrevsky/amasty-captcha-bypass`
+-   Removed `magenable/module-base` dependency for standalone installation
+-   Updated admin configuration location to **Advanced** → **Captcha Bypass**
+-   Plugin target from Magento native ReCaptcha to Amasty's Captcha model
+-   Module dependency from `Magento_ReCaptchaUi` to `Amasty_InvisibleCaptcha`
+-   Enhanced README with testing examples and troubleshooting
+-   Updated composer.json keywords and author information
+
+### Removed
+
+-   Dependency on `Magenable_Base` module
+-   Dependency on `Magento_ReCaptchaUi` module
+
+## [1.0.8] - Previous Release
+
+### Features
+
+-   IP address whitelist bypass for Magento native reCaptcha
+-   User-Agent whitelist bypass for Magento native reCaptcha
+-   Admin configuration panel
